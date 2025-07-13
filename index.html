@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="Portfolio.png" type="image/x-icon">
+  <title>Juhi's Portfolio</title>
+</head>
+<body>
+  <div class="main first">
+    <div class="burger" onclick="toggleMenu()">☰</div>
+   <div id="tsparticles"></div>
+<!-- Navigation -->
+<div class="tab-nav">
+  <a class="tab-btn" id="go-home">🏠 <span class="tab-label">Home</span></a>
+  <a class="tab-btn" id="go-about">👤 <span class="tab-label">About</span></a>
+  <a class="tab-btn" id="go-project">💻 <span class="tab-label">Projects</span></a>
+  <a class="tab-btn" id="go-contact">📞 <span class="tab-label">Contact</span></a>
+  <a class="tab-btn" id="go-more">❓ <span class="tab-label">More</span></a>
+</div>
+
+
+
+<div class="flipbook-wrapper">
+  <div class="flipbook">
+    <div class="hard">
+  <div class="cover-text">
+    <span id="typed-text"></span><span class="cursor"> </span>
+  </div>
+  MY PORTFOLIO
+  <small>~ Juhi Makkar</small>
+</div>
+
+<div class="hard"></div>
+
+    <!-- About Page -->
+    <div class="page">
+      <div class="page-title">About :-</div>
+      <img src="images/Juhi.jpg" alt="Juhi Makkar" height="349" width="349" />
+      <small>I'm Juhi Makkar</small>
+      <small>Web Developer • CSE Undergraduate</small>
+      <small>DOB:- 21 July 2005</small>
+      <small>Gender:- Female</small>
+      <small>Language Known:- Hindi, English</small>
+    </div>
+
+    <!-- School Page -->
+    <div class="page school-page">
+      <div class="page-title">Education :-</div>
+      <img src="images/School.jpg" alt="School" />
+      <div class="edu-heading">Raceme Public Senior Secondary School</div>
+      <small>12th class:- 2022–2023 (RBSE Board)</small>
+      <small>I have completed my 12th board with 88% in PCM</small>
+      <small>10th class:- 2020–2021 (RBSE Board)</small>
+      <small>I have completed my 10th board with 94%</small>
+    </div>
+
+    <!-- College Page -->
+    <div class="page college-page">
+      <img src="images/College.jpg" alt="College" />
+      <div class="edu-heading">Arya College of Engineering and IT</div>
+      <small>Course:- Bachelor of Technology (B.Tech)</small>
+      <small>Branch:- Computer Science & Engineering (CSE)</small>
+      <small>CGPA:- 9.3</small>
+    </div>
+
+   <!-- Technical skills Page -->
+<div class="page TS-page">
+  <div class="page-title">Technical Skills :-</div>
+
+  <div class="skills-section">
+    <div class="skills-label">Web Development</div>
+    <div class="skills-row">
+      <img src="images/HTML.png" alt="HTML" />
+      <img src="images/CSS.png" alt="CSS" />
+      <img src="images/JS.png" alt="JavaScript" />
+    </div>
+
+    <div class="skills-label">Programming Languages</div>
+    <div class="skills-row">
+      <img src="images/C.png" alt="C" />
+      <img src="images/java.png" alt="Java" />
+    </div>
+  </div>
+</div>
+
+<div class="page TS-page">
+  <div class="skills-section">
+    <div class="skills-label">Programming Concepts</div>
+    <div class="skills-row">
+      <img src="images/C++.png" alt="C++" />
+      <img src="images/MySQL.png" alt="MySQL" />
+    </div>
+
+    <div class="skills-label">Other Skills:-</div>
+    <small>1. Data Structure & Algorithms in Java</small>
+    <small>2. Operating System Linux</small>
+  </div>
+</div>
+
+<!-- Certifications Page -->
+<!-- Certifications Left Page -->
+<div class="page Certifications-page">
+  <div class="page-title">Certifications :-</div>
+
+  <div class="certifications-left1">
+    <img src="images/RedHat.jpg" alt="RedHat Certificate" />
+  </div>
+  <div class="certifications-left2">
+     <img src="images/Deloitte.jpg" alt="Deloitte Certificate" />
+  </div>
+</div>
+
+<!-- Certifications Right Page -->
+<div class="page Certifications-page">
+  <div class="certifications-right">
+    <img src="images/Google.jpg" alt="Google Certificate" />
+    
+    <div class="cert-list-container">
+      <div class="cert-title">Other Certifications:-</div>
+      <ol>
+        <li> Oracle Fusion Cloud Applications HCM Process Essentials Certified - Rel 1</li>
+        <li> AWS Solutions Architecture Job Simulation</li>
+        <li> Deploying and Evaluating GenAI Apps with MongoDB</li>
+        <li> Walmart Advanced Software Engineering Job Simulation</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- Projects Left Page -->
+<div class="page Project-page">
+  <div class="page-title">Projects :-</div>
+
+  <div class="Project-block">
+    <div class="Project-title">AI Voice Generator:-</div>
+    <a href="https://ai-voice-generator.netlify.app/" target="_blank">
+      <img src="images/Voice.png" alt="AI Voice Generator" class="project-img" />
+    </a>
+    <div class="Project-container">
+      <div class="skills-label">Description:- </div>
+      <p class="project-desc">
+        This project converts input text into speech using customizable options like gender, language, and mood. Users can choose between male or female voices, select various languages, and apply emotional tones to generate natural-sounding audio tailored to their preferences.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Project Right Page -->
+<div class="page Project-page">
+  <div class="Project-block">
+    <div class="Project-title">TicTacToe Game:-</div>
+    <a href="https://tic-tac-toe-juhi.netlify.app/" target="_blank">
+      <img src="images/TicTacToe.jpg" alt="TicTacToe Game" class="project-img" />
+    </a>
+    <div class="Project-container">
+      <div class="skills-label">Description:- </div>
+      <p class="project-desc">
+        A responsive Tic Tac Toe game built using HTML, CSS, and JavaScript. It offers two modes—Play with Friend and Play with Robot—each with unique themes, sound effects, and animated visuals. The game includes real-time win/draw detection and a user-friendly interface.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Soft Skill Page -->
+<div class="page SS-page">
+  <div class="page-title">Soft Skills :-</div>
+
+  <div class="SS-progress-container">
+
+    <div class="progress-group">
+      <div class="label">Communication</div>
+      <div class="progress-bar">
+        <div class="progress" data-percent="90"></div>
+        <span class="percent-label">85%</span>
+      </div>
+    </div>
+
+    <div class="progress-group">
+      <div class="label">Time Management</div>
+      <div class="progress-bar">
+        <div class="progress" data-percent="85"></div>
+        <span class="percent-label">95%</span>
+      </div>
+    </div>
+
+    <div class="progress-group">
+      <div class="label">Team Work</div>
+      <div class="progress-bar">
+        <div class="progress" data-percent="88"></div>
+        <span class="percent-label">98%</span>
+      </div>
+    </div>
+
+    <div class="progress-group">
+      <div class="label">Problem Solving</div>
+      <div class="progress-bar">
+        <div class="progress" data-percent="80"></div>
+        <span class="percent-label">80%</span>
+      </div>
+    </div>
+
+    <div class="progress-group">
+      <div class="label">Creativity</div>
+      <div class="progress-bar">
+        <div class="progress" data-percent="92"></div>
+        <span class="percent-label">97%</span>
+      </div>
+    </div>
+
+    <div class="progress-group">
+      <div class="label">Quick Learner</div>
+      <div class="progress-bar">
+        <div class="progress" data-percent="92"></div>
+        <span class="percent-label">92%</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Resume Page -->
+<div class="page Resume-page">
+  <div class="resume-container">
+    <div class="resume-title">📄 My Resume</div>
+    
+    <div class="resume-description">
+      A detailed overview of my academic qualifications, projects, skills, and achievements. Feel free to download or view it online.
+    </div>
+
+    <div class="resume-buttons">
+      <a href="images/Resume.pdf" target="_blank" class="view-resume">📄 View Resume</a>
+      <a href="images/Resume.pdf" download class="download-resume">⬇️ Download Resume</a>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Page -->
+<div class="page Contact-page">
+  <div class="page-title">Contact Me :-</div>
+
+  <div class="contact-info">
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <span>Email:</span>
+      <a href="mailto:juhimakkar400@gmail.com">juhimakkar400@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fas fa-phone-alt"></i>
+      <span>Phone:</span>
+      <a href="tel:+919261230792">+91 9261230792</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>Location:</span> Jaipur, Rajasthan, India
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-linkedin"></i>
+      <a href="http://www.linkedin.com/in/juhi-makkar-312829326" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="contact-item">
+      <i class="fab fa-github"></i>
+      <a href="https://github.com/Juhi-Makkar" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="hard"></div>
+    <div class="hard">Thank You </div>
+  </div>
+  </div>
+
+  
+</div>
+  
+<div class="sepration"></div>
+
+<div class="section main second">
+  <div class="about-wrapper" >
+
+    <img src="images/juhi.jpg" alt="Juhi Makkar" height="349" width="349" class="fade-slide-up">
+    <div class="about-text fade-slide-up">
+      <h2>About Me:-</h2>
+      <p>
+        I’m Juhi Makkar, a passionate and dedicated Computer Science Engineering undergraduate with a strong interest in web development, UI/UX, and emerging technologies.
+      </p>
+      <p>
+        Currently pursuing my B.Tech at Arya College of Engineering & IT, I’ve built a solid foundation in HTML, CSS, JavaScript, Java, and MySQL, along with hands-on experience in responsive design and interactive user interfaces.
+      </p>
+      <p>
+        I love bringing ideas to life through code and design. Whether it’s building a Netflix clone, an AI voice generator, or solving DSA problems, I thrive in transforming logic into clean, impactful interfaces.
+      </p>
+      <p>
+        Alongside technical skills, I’m known for being a quick learner, team player, and someone who pays attention to detail.
+      </p>
+      <p>
+        My goal is to contribute to innovative projects, enhance my problem-solving abilities, and eventually grow into a full-stack or product engineer role.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="sepration"></div>
+
+  <div class="main third">
+      <h2>Frequently Asked Questions</h2>
+        <div class="faqbox slide-up hidden">
+          <div class="faq-question">
+        <span>What inspired you to pursue CSE?</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        </div>
+          <p class="faq-answer">I've always been curious about how technology works and how websites or software are built from scratch. This curiosity turned into passion, which led me to pursue Computer Science Engineering and explore the world of coding, logic, and design.</p>
+        </div>
+        <div class="faqbox slide-up hidden">
+          <div class="faq-question">
+        <span>What are your strongest technical skills?</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        </div>
+          <p class="faq-answer">My strengths lie in front-end web development using HTML, CSS, and JavaScript, as well as programming languages like Java and C++. I also enjoy building clean and responsive user interfaces.</p>
+        </div>
+        <div class="faqbox slide-up hidden">
+          <div class="faq-question">
+        <span>What is your favorite programming language and why?</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        </div>
+          <p class="faq-answer">Java is my favorite language because of its versatility and strong foundation in object-oriented programming. It's also crucial for solving DSA problems, which I regularly practice to enhance my problem-solving skills.</p>
+        </div>
+        <div class="faqbox slide-up hidden">
+          <div class="faq-question">
+        <span>Are you open to internships or freelance work?</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        </div>
+          <p class="faq-answer">Yes, I’m always open to new learning opportunities, including internships or freelance projects. I believe such experiences help me grow, apply my skills in real-world scenarios, and connect with professionals in the industry.</p>
+        </div>
+        <div class="faqbox slide-up hidden">
+          <div class="faq-question">
+        <span>Are you currently learning any new skills or tools?</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        </div>
+          <p class="faq-answer">Yes, I’m currently enhancing my knowledge of Data Structures and Algorithms, exploring AWS cloud fundamentals, and diving deeper into core programming concepts and software development tools.</p>
+        </div>
+        <div class="faqbox slide-up hidden">
+          <div class="faq-question">
+        <span>What are your future goals as a developer?</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        </div>
+          <p class="faq-answer">I aim to become a full-stack web developer and work on scalable, impactful projects. I’m also eager to learn Generative AI and stay updated with emerging tech skills. Eventually, I see myself growing into a product engineer or leading role in tech innovation.</p>
+        </div>
+  </div>
+
+  <div class="sepration"></div>
+
+ <footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: Name & Title -->
+    <div class="footer-column">
+      <h3>Juhi Makkar</h3>
+      <p>Web Developer</p>
+      <p>Computer Science Engineer</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Find</h4>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#" id="go-to-about">About</a></li>
+      <li><a href="#" id="go-to-skills">Skills</a></li>
+      <li><a href="#" id="go-to-projects">Projects</a></li>
+      <li><a href="#" id="go-to-resume">Resume</a></li>
+    </ul>
+    </div>
+
+    <!-- Column 3: Get in Touch -->
+    <div class="footer-column">
+      <h4>Get in Touch</h4>
+      <div class="footer-icons">
+        <a href="mailto:juhimakkar400@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email </a>
+        <a href="https://www.linkedin.com/in/juhi-makkar-312829326" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Juhi-Makkar" target="_blank"><i class="fab fa-github"> GitHub</i></a>
+        <a href="tel:+919261230792" target="_blank"><i class="fas fa-phone-alt"></i> Contact</a>
+      </div>
+    </div>
+
+  </div>
+
+   <div class="copyright">
+    <p>© 2025 Juhi Makkar. All rights reserved.</p>
+  </div>
+
+</footer>
+
+
+  <script src="jquery.js"></script>
+  <script src="turn.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $(".flipbook").turn();
+  </script>
+<script>
+  function toggleMenu() {
+  document.querySelector('.tab-nav').classList.toggle('show');
+}
+
+</script>
+
+</body>
+</html>
